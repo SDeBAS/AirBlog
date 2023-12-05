@@ -1,4 +1,4 @@
-# AirBook - Explore the Skies 🛫
+# AirBlog - Explore the Skies 🛫
 
 🚀 Welcome to AirBlog, your exclusive destination for sharing and exploring captivating stories from the skies. AirBlog is more than just a flight blogging platform; it's a community that celebrates the joy of aviation, connecting pilots, travelers, and aviation enthusiasts worldwide.
 
