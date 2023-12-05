@@ -38,6 +38,7 @@ Before you start, make sure you have the following prerequisites:
 
 - Node.js installed
 - npm package manager
+- MongoDB installed
 
 ## How to Initialize
 
@@ -45,10 +46,15 @@ Follow these steps to initialize the project:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/awesome-project.git
+git clone https://github.com/SDeBAS/AirBook.git
 
 # Change to project directory
-cd awesome-project
+cd AirBook
 
-# Install dependencies
+# Install dependencies for BackEnd Connection
+cd backend
+npm install
+
+# Install dependencies for FrontEnd Connection
+cd backend
 npm install
