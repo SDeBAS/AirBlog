@@ -1,0 +1,45 @@
+.commentbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: #ECECEC;
+    border-radius: 7px;
+}
+
+.commentbox__add {
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 6.5rem;
+    padding: .9rem;
+    border-radius: 7px;
+    background-color: #2D31FA;
+    width: 15rem;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.commentbox__addText {
+    font-size: 3rem;
+    color: black;
+    font-weight: 600;
+}
+
+.commentbox__head {
+    font-size: 2rem;
+    opacity: 80%;
+}
+
+@media screen and (max-width: 480px) {
+    .commentbox {
+        width: 85%;
+    }
+
+    .commentbox__addText {
+        font-size: 2.5rem;
+    }
+}

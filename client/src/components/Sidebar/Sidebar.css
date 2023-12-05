@@ -1,0 +1,50 @@
+/* sidebar.css */
+
+.sidebar {
+    flex: 1;
+    /* background-color: orangered; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* box-shadow: 0 2rem 3rem rgba(0,0,0,.1); */
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        padding: 2rem;
+    }
+}
+
+.sidebar__title {
+    font-size: 2.5rem;
+    opacity: 75%;
+}
+
+.sidebar__title:after {
+    content: "";
+    display: block;
+    margin: 0 0;
+    width: 30%;
+    padding-top: 8px;
+    border-bottom: 3px solid black;
+
+    @media screen and (max-width: 480px) {
+        width: 20%;
+    }
+}
+
+.sidebar__image {
+    width: 100%;
+    border-radius: 10%;
+
+    @media screen and (max-width: 300px) {
+        width: 90%;
+    }
+}
+
+.sidebar__paragraph {
+    font-size: 1.7rem;
+    opacity: 90%;
+    line-height: 1.5;
+    text-align: justify;
+}

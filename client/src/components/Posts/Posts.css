@@ -1,0 +1,36 @@
+.posts {
+  flex-basis: 75%;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .posts {
+    order: 1;
+    flex-basis: 85%;
+  }
+}
+
+.posts__title {
+  font-size: 2.8rem;
+  opacity: 0.75;
+  align-self: flex-start;
+  flex-basis: 100%;
+}
+
+.posts__title:after {
+  content: "";
+  display: block;
+  width: 11%;
+  padding-top: 8px;
+  border-bottom: 3px solid black;
+}
+
+.spinner {
+  flex-basis: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

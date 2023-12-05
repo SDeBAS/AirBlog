@@ -1,0 +1,72 @@
+.single {
+  flex-basis: 75%;
+  padding: 1rem 2.5rem;
+}
+
+.single__simg {
+  width: 50%;
+  margin: auto;
+}
+
+.single__simg1 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.single__titlebox {
+  text-align: center;
+}
+
+.single__title {
+  font-size: 3rem;
+  opacity: 0.8;
+
+  @media screen and (max-width: 480px) {
+    font-size: 3rem;
+  }
+}
+
+.single__date {
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 6.5rem;
+  background-color: #ff6300;
+  padding: 0.9rem;
+  border-radius: 7px;
+  background-color: #5a07d9;
+  color: #fff;
+}
+
+.single__email
+{
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  width: 6.5rem;
+  background-color: #ff6300;
+  padding: 0.9rem;
+  border-radius: 7px;
+  color: #fff;
+}
+
+.single__para {
+  max-width: 100%;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  text-align: justify;
+  opacity: 0.8;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+
+  @media screen and (max-width: 480px) {
+    font-size: 2.1rem;
+  }
+}
+
+.single__para::first-letter {
+  margin-left: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #5a07d9;
+}

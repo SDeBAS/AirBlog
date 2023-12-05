@@ -1,0 +1,30 @@
+.allCommentslist {
+    /* background-color: orange; */
+    width: 80%;
+    overflow-y: auto;
+    height: auto;
+    scroll-behavior: auto;
+    padding: 1rem 2rem;
+}
+
+.allCommentslist::-webkit-scrollbar {
+    width: 5px;
+}
+
+.allCommentslist::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.allCommentslist::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.allCommentslist::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media screen and (max-width: 480px) {
+    .allCommentslist {
+        text-align: center;
+    }
+}

@@ -1,0 +1,249 @@
+/* Header.css */
+
+.header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    height: 7rem;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    padding: 0 3rem;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+        padding: 0 2rem;
+    }
+}
+
+.header__logo {
+    margin-left: 1rem;
+    opacity: 90%;
+}
+
+.header__nav {
+    margin-right: auto;
+    opacity: 80%;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+}
+
+.header__items {
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.7rem;
+    opacity: 80%;
+    text-decoration: none;
+    color: inherit;
+
+    &:not(:last-child) {
+        margin-right: 4rem;
+    }
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        opacity: 100%;
+    }
+
+    @media screen and (max-width: 480px) {
+        /* Adjust the styles for mobile view */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .header__items-link {
+            font-size: 3rem;
+            text-decoration: none;
+            list-style: none;
+            font-weight: bold;
+            color: black;
+            opacity: 90%;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.header__authentication {
+    display: flex;
+    padding: 1rem;
+    opacity: 80%;
+    align-items: center;
+    font-size: 1.3rem;
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+}
+
+.header__login {
+    cursor: pointer;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.7rem;
+    opacity: 80%;
+
+    @media screen and (max-width: 480px) {
+        margin: 1rem 3rem;
+    }
+}
+
+.header__signup {
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    width: 9rem;
+    text-align: center;
+    background-color: #5a07d9;
+    padding: .8rem;
+    color: #fff;
+    border-radius: 7px;
+    transition: background-color .3s;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #ff6300;
+    }
+}
+
+.header__user {
+    margin-right: 2rem;
+    background-color: #9FB4FF;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.header__user-link {
+  text-decoration: none; /* Remove underline for the user link */
+  color: inherit; /* Inherit the text color from the parent */
+}
+
+.header__welcome {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right: 1.3rem;
+    text-decoration: none;
+}
+
+.header__welcomeuser {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.header__logout {
+    cursor: pointer;
+    font-weight: 600;
+    width: 6.8rem;
+    border: none;
+    text-align: center;
+    background-color: #5a07d9;
+    padding: .8rem;
+    color: #fff;
+    border-radius: 7px;
+    transition: background-color .3s;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #ff6300;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 10rem;
+        margin-top: 2rem;
+    }
+}
+
+.headeractive:hover,
+.headeractive:active,
+.headeractive {
+    background-color: #5a07d9;
+    color: #fff;
+    padding: .5rem 1.3rem;
+    border-radius: 15px;
+}
+
+.headeractive:hover {
+    background-color: #ff6300;
+}
+
+@media screen and (max-width: 480px) {
+    .header__list {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 4rem;
+        height: 3rem;
+        cursor: pointer;
+        transition: all .2s ease;
+    }
+
+    .hamburger__line {
+        width: 100%;
+        height: .5rem;
+        background-color: #5a07d9;
+    }
+
+    .hamburger__authentication {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .hamburger__menu {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: #F7F5F2;
+        top: 6.5rem;
+        right: 0;
+        padding: 2rem 0;
+        margin: 0;
+        transition: all .2s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger__items {
+        font-size: 3rem;
+        text-decoration: none;
+        list-style: none;
+        font-weight: bold;
+        color: black;
+        opacity: 90%;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        .header__items-link {
+            font-size: 3rem;
+            text-decoration: none;
+            list-style: none;
+            font-weight: bold;
+            color: black;
+            opacity: 90%;
+            margin-bottom: 2rem;
+        }
+    }
+}

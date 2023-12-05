@@ -1,0 +1,189 @@
+/* General Styling */
+.write {
+  padding: 5rem;
+}
+
+.notLog {
+  padding: 4rem 5rem;
+  text-align: center;
+}
+
+/* Write Section */
+.write__form-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.write__heading {
+  font-size: 4rem;
+  opacity: 0.8;
+}
+
+.write__inputbox,
+.write__showBox,
+.write__showImg,
+.write__cat,
+.write__text,
+.write__words,
+.write__date,
+.write__submit {
+  margin-bottom: 3rem;
+}
+
+.write__inputbox,
+.write__showBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.write__inputbox > span,
+.write__cat {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: red;
+}
+
+.write__imageLink,
+.write__cat,
+.write__text,
+.write__words,
+.write__date,
+.write__submit {
+  display: block;
+  border: none;
+  outline: none;
+}
+
+.write__imageLink {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1.3rem 0.9rem;
+  text-transform: capitalize;
+  border-radius: 9px 9px 0 0;
+  width: 40%;
+  border-bottom: 2px solid #5a07d9;
+  margin-top: 4rem;
+
+  @media screen and (max-width: 480px) {
+    width: 60%;
+    font-size: 1.7rem;
+  }
+}
+
+.write__showImg {
+  width: 50%;
+  border-radius: 9px;
+  margin: 0 auto;
+  transition: all 0.5s;
+
+  @media screen and (max-width: 480px) {
+    width: 80%;
+  }
+}
+
+.write__cat {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.9rem;
+  text-transform: capitalize;
+  border-radius: 9px 9px 0 0;
+  width: 20%;
+  border-bottom: 2px solid #5a07d9;
+
+  @media screen and (max-width: 480px) {
+    width: 45%;
+  }
+}
+
+.write__email {
+  
+  text-transform:lowercase;
+  
+}
+
+
+.write__text {
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 9px 9px 0 0;
+  width: 60%;
+  border-bottom: 2px solid #5a07d9;
+  text-transform: capitalize;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 75%;
+  }
+}
+
+.write__words {
+  font-size: 2.5rem;
+  padding: 1rem;
+  border-radius: 9px 9px 0 0;
+  width: 80%;
+  border-bottom: 2px solid #5a07d9;
+  word-wrap: break-word;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.write__date {
+  font-size: 2rem;
+  cursor: pointer;
+  border-bottom: 2px solid #5a07d9;
+  color: #5a07d9;
+  width: 15%;
+
+  @media screen and (max-width: 480px) {
+    width: 40%;
+  }
+}
+
+.write__submit {
+  background-color: #5a07d9;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 7px;
+  width: 12rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #ff6300;
+  }
+}
+
+/* Not Logged In Section */
+.notLog__message {
+  font-size: 3rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.notLog__message:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  padding-top: 8px;
+  border-bottom: 3px solid black;
+}
+
+.notLog__img {
+  width: 30%;
+
+  @media screen and (max-width: 480px) {
+    width: 90%;
+  }
+}

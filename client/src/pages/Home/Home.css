@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  padding: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+}
