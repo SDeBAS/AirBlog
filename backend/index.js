@@ -31,13 +31,7 @@ mongoose.connect(process.env.MONGO_URL, {
 });
 
 app.use("/auth", authRoute);
-app.use("/backend/posts", (req, res, next) => {
-  // Set CORS headers for this route
-  res.header("Access-Control-Allow-Origin", "https://air-blog-frontend.vercel.app");
-  res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
-  next();
-}, postRoute);
+app.use("/posts", postRoute);
 
 app.get('/', (req, res) => {
   // Implement your logic to handle the request
