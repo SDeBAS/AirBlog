@@ -22,7 +22,7 @@ const Profile = () => {
         if (isConfirmed) {
             try {
                 // Call your backend to delete the post with the provided postId
-                const response = await axios.delete(`https://air-blog-backend.vercel.app/backend/posts/${postId}`);
+                const response = await axios.delete(`https://air-blog-backend.vercel.app/posts/${postId}`);
                 console.log('Deleted Post:', response.data);
                 window.location.reload();
                 // Handle success or update your state accordingly
@@ -44,7 +44,7 @@ const Profile = () => {
         const fetchUserPosts = async () => {
             try {
                 // Instead of using user.userId, you can directly use user.id
-                const response = await axios.get(`https://air-blog-backend.vercel.app/backend/posts/user/email/${user.email}`);
+                const response = await axios.get(`https://air-blog-backend.vercel.app/posts/user/email/${user.email}`);
                 setUserPosts(response.data);
             } catch (error) {
                 console.error("Error fetching user posts:", error);
