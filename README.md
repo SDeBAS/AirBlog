@@ -58,3 +58,40 @@ npm install
 # Install dependencies for FrontEnd Connection
 cd backend
 npm install
+
+```bash
+Frontend
+1. React: React is the core library for building user interfaces in a declarative
+and component-based manner. It's fundamental for developing interactive
+and dynamic web applications.
+2. Redux Toolkit: Redux Toolkit simplifies and streamlines the usage of
+Redux in React applications. It provides a set of conventions and
+abstractions that make state management more efficient and
+developer-friendly.
+3. axios: Axios is a widely used HTTP client library for making asynchronous
+requests. It's crucial for handling data fetching and interacting with APIs in a
+React application.
+4. React Router: React Router enables navigation and routing in React
+applications. It's essential for building single-page applications with multiple
+views.
+Backend
+1. Express: Express is a fast, unopinionated, minimalist web framework for
+Node.js. It simplifies the process of building robust and scalable web
+applications by providing a set of features and middleware.
+2. Mongoose: Mongoose is an ODM (Object-Document Mapping) library for
+MongoDB and Node.js. It provides a schema-based solution to model
+application data and includes features like validation, middleware, and query
+building.
+3. bcryptjs: bcryptjs is a library for hashing and salting passwords. It helps
+securely store and manage user passwords by providing a way to hash and
+compare passwords.
+4. body-parser: body-parser is middleware for Express that extracts the body
+of an incoming HTTP request and parses it into a format that is easy to work
+with, such as JSON or URL-encoded data.
+5. cors: cors is middleware for Express that enables Cross-Origin Resource
+Sharing (CORS) on the server. It allows or restricts cross-origin requests
+based on the server's configuration, preventing unauthorized access.
+6. dotenv: dotenv is a zero-dependency module that loads environment
+variables from a .env file into the process.env object. It's commonly used to
+manage configuration settings in Node.js applications.
+
