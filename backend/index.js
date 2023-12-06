@@ -14,7 +14,7 @@ const app = express();
 // Enable CORS for all routes
 app.use(cors({
   origin: ["https://air-blog-frontend.vercel.app"],
-  methods: ["POST", "GET","PUT"],
+  methods: ["POST", "GET","PUT","DELETE"],
   credentials: true,
 }));
 
