@@ -131,3 +131,5 @@ User Login: POST /auth/login
 ```
 
 # Screenshots
+
+![Home Page](screenshots/screenshot1.png)
