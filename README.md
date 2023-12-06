@@ -132,5 +132,63 @@ User Login: POST /auth/login
 
 # Screenshots
 
+Home Page
 <img src="screenshots/1.png" alt="Logo">
+
+About Page
+<img src="screenshots/2.png" alt="Logo">
+
+All Blogs Page
+<img src="screenshots/3.png" alt="Logo">
+
+Login Page
+<img src="screenshots/4.png" alt="Logo">
+
+Signup Page
+<img src="screenshots/5.png" alt="Logo">
+
+Write Page Before Login
+<img src="screenshots/6.png" alt="Logo">
+
+Write Page After Login
+<img src="screenshots/7.png" alt="Logo">
+
+Profile Page
+<img src="screenshots/8.png" alt="Logo">
+
+
+# Security Measures
+
+AirBlog has implemented the following security measures to ensure a secure environment for users:
+
+1. **User Authentication:** Secure user authentication using hashed passwords and sessions to protect user accounts.
+
+2. **Authorization Checks:** Implementation of proper authorization checks to ensure that users can only access and modify their own data.
+
+3. **HTTPS:** Deployment with HTTPS to encrypt data in transit, providing a secure connection between the client and the server.
+
+4. **Data Validation:** Input validation to prevent common security vulnerabilities, such as SQL injection and cross-site scripting (XSS) attacks.
+
+5. **Rate Limiting:** Implementing rate-limiting mechanisms to prevent abuse and protect against brute-force attacks.
+
+6. **Dependencies Update:** Regularly updating dependencies and monitoring for security vulnerabilities in third-party packages.
+
+# Future Scope and Upgrades
+
+AirBlog is continuously evolving, and we have exciting plans for future upgrades and features:
+
+1. **Real-Time Notifications:** Implementing real-time notifications to keep users informed about new posts, comments, and interactions.
+
+2. **Enhanced User Profiles:** Introducing more customization options for user profiles, allowing users to showcase their aviation interests and achievements.
+
+3. **Mobile Application:** Developing a mobile application to provide users with a seamless experience on their mobile devices.
+
+4. **Advanced Search:** Adding advanced search functionality to help users discover specific content more efficiently.
+
+5. **Community Features:** Introducing community features such as forums, discussion boards, and groups to foster a stronger sense of community.
+
+6. **Multimedia Support:** Allowing users to upload and share multimedia content, including videos and interactive media.
+
+
+
 
