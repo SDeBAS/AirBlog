@@ -14,7 +14,7 @@ const Blogs = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await axios.get('https://air-blog-backend.vercel.app/backend/posts/');
+                const response = await axios.get('https://air-blog-backend.vercel.app/posts/');
                 setPosts(response.data);
                 setLoading(false);
             } catch (error) {
