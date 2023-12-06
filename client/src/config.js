@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL: "http://localhost:5000/backend",
+    baseURL: "https://air-blog-backend.vercel.app/backend",
 });
