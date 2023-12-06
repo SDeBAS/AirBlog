@@ -36,7 +36,7 @@ const Form = ({ onOrder, postId }) => {
             const fetchPostData = async () => {
                 try {
                     // Example API call to fetch post data
-                    const response = await fetch(`http://localhost:5000/backend/posts/${postId}`);
+                    const response = await fetch(`https://air-blog-backend.vercel.app/posts/${postId}`);
                     const postData = await response.json();
 
                     // Set the initial state of the form fields based on the fetched post data
