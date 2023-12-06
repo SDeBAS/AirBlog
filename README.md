@@ -128,5 +128,6 @@ DELETE /posts/:id
 Authentication Routes:
 User Registration: POST /auth/register
 User Login: POST /auth/login
-
 ```
+
+# Screenshots
