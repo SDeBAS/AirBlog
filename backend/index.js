@@ -30,9 +30,9 @@ mongoose.connect(process.env.MONGO_URL, {
   console.error("Error connecting to MongoDB:", err);
 });
 
-app.use("/backend/auth", authRoute);
-app.use("/backend/posts", postRoute);
-app.use('/backend/user', userRouter);
+app.use("/auth", authRoute);
+app.use("/posts", postRoute);
+app.use('/user', userRouter);
 
 app.use(express.static(path.join(__dirname, "./client/public")));
 
