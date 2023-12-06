@@ -38,6 +38,12 @@ app.use("/backend/posts", (req, res, next) => {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   next();
 }, postRoute);
+
+app.get('/', (req, res) => {
+  // Implement your logic to handle the request
+  res.send('Hello from /backend/posts!');
+});
+
 app.use('/user', userRouter);
 
 app.use(express.static(path.join(__dirname, "./client/public")));
