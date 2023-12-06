@@ -12,7 +12,7 @@ const userRouter = require('./routes/user');
 env.config(); 
 app.use(cors(
     {
-        origin:["https://air-blog-frontend.vercel.app/"],
+        origin:["https://air-blog-frontend.vercel.app"],
         methods:["POST","GET"],
         credentials:true
     }
