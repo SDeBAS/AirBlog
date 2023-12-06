@@ -42,6 +42,7 @@ Before you start, make sure you have the following prerequisites:
 
 Follow these steps to initialize the project:
 
+```bash
 # Clone the repository
 git clone https://github.com/SDeBAS/AirBook.git
 
@@ -55,8 +56,7 @@ npm install
 # Install dependencies for FrontEnd Connection
 cd backend
 npm install
-
-
+```
 # Required Modules and Their Importance
 
 #Frontend
@@ -76,6 +76,7 @@ axios: Axios is a widely used HTTP client library for making asynchronous reques
 
 # User Navigation
 
+```bash
 #Frontend App Structure 
 
   src
@@ -128,3 +129,4 @@ Authentication Routes:
 User Registration: POST /auth/register
 User Login: POST /auth/login
 
+```
